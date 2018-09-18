@@ -1,0 +1,28 @@
+/* pages/demo/demo.wxss */
+
+.a1 {
+  background-color: pink;
+  width: 84px;
+  height: 84px;
+}
+.a2 {
+  background-color: lightblue;
+  width: 200rpx;
+  height: 200rpx;
+}
+.flex-wrp {
+  display: flex;
+}
+.flex-item {
+  width: 150rpx;
+  height: 150rpx;
+}
+.bc_green {
+  background-color: lightgreen;
+}
+.bc_red {
+  background-color: lightcoral;
+}
+.bc_blue {
+  background-color: lightblue;
+}

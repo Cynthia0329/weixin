@@ -1,0 +1,48 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/message/message",
+        "pages/profile/profile",
+        "pages/contact/contact",
+        "pages/shopList/shopList",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#f60",
+        "navigationBarTitleText": "本地宝",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#999",
+        "selectedColor": "#333",
+        "borderstyle": "black",
+        "position": "bottom",
+        "list": [
+            {
+                "text": "首页",
+                "pagePath": "pages/index/index",
+                "iconPath": "assets/tabs/home.png",
+                "selectedIconPath": "assets/tabs/home-active.png"
+            },
+            {
+                "text": "消息",
+                "pagePath": "pages/message/message",
+                "iconPath": "assets/tabs/message.png",
+                "selectedIconPath": "assets/tabs/message-active.png"
+            },
+            {
+                "text": "个人中心",
+                "pagePath": "pages/profile/profile",
+                "iconPath": "assets/tabs/profile.png",
+                "selectedIconPath": "assets/tabs/profile-active.png"
+            },
+            {
+                "text": "大杂烩",
+                "pagePath": "pages/contact/contact",
+                "iconPath": "assets/tabs/contact.png",
+                "selectedIconPath": "assets/tabs/contact-active.png"
+            }
+        ]
+    }
+}

@@ -1,0 +1,5 @@
+<!--pages/pageIn/pageIn.wxml-->
+
+<template name="item">
+  <text>{{text}}</text>
+</template>

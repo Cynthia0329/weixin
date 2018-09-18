@@ -1,0 +1,99 @@
+/*功能封装1：白色底色，间隔封装*/
+
+/* page {
+    background-color: #ccc;
+} */
+
+/* 
+    1.给page设置背景色，
+    2.给分区填充白色，
+    3.再通过margin隔开 
+*/
+
+.bgw {
+    background-color: #fff;
+}
+
+.mt20 {
+    margin-top: 20rpx;
+}
+
+/*功能封装2：专门用于做间隔的类，设定高度，填充底色*/
+
+.divider {
+    height: 20rpx;
+    background-color: #f1f1f1;
+    box-shadow: 0 5rpx 5rpx rgba(0, 0, 0, 0.1) inset;
+}
+
+/*功能封装3：细线边框*/
+/*移动端边框问题：右边框普遍写法占位置，也容易对不齐*/
+/*解决方法：伪元素+定位 实现*/
+
+.bd-r {
+    /*子绝父相*/
+    position: relative;
+}
+
+.bd-r::after {
+    /*通过伪元素绘制1像素的右边框*/
+    content: "";
+    width: 1rpx;
+    height: 100%;
+    background-color: #ddd;
+    /*定位，使该伪元素不占位置*/
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*功能封装4：箭头*/
+.arrow {
+    display: flex;
+    justify-content: space-between;     /*向两边布局*/
+    align-content: center;
+}
+.arrow::after {
+    content: "";
+    width: 15rpx;
+    height: 15rpx;
+    border-top: 3rpx solid #ccc;
+    border-right: 3rpx solid #ccc;
+    transform: rotate(45deg);
+}
+
+/* 功能封装5：水平垂直居中 */
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 功能封装6：列表封装 */
+.cell{
+    font-size:16px;
+    background-color: #fff;
+}
+.cell-item{
+    border-bottom: 1rpx solid #ddd;
+    padding: 20rpx 30rpx;
+}
+
+/* 功能封装7：星星评分封装 */
+.star-after{
+    color: #e2e2e2;
+}
+.star-before{
+    color:#f19e38;
+    position: absolute;
+    left:0;
+    top:0;
+    overflow: hidden;
+}
+
+/* 功能封装8：单行超出宽度变省略号 */
+.ell {
+    overflow: hidden;
+    white-space: nowrap;    /*设置不换行*/
+    text-overflow: ellipsis;    /*超出的文字设置显示为省略号*/
+}

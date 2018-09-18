@@ -1,0 +1,107 @@
+<!--pages/demo/demo.wxml-->
+<!-- <view>{{demoText}}</view>
+<text>{{demoText}}</text> -->
+
+<!-- <view>传到页面的全局变量的值是：{{textP}}</view> -->
+
+<!-- <button bindtap='toIndex'>跳转主页</button> -->
+
+<!-- <button bindtap='helloMINA'>点击</button> -->
+
+<!-- <view>输出一列数组：</view>
+<view wx:for="{{array}}">{{item}}</view> -->
+
+<!-- <button bindtap='show'>点我</button>
+<view wx:if="{{aa}}">条件渲染-显示与隐藏</view> -->
+
+
+<!-- <view wx:if="{{id==1}}">数值为1</view>
+<view wx:if="{{id>4}}">数值大于4</view> -->
+
+<!-- <block wx:if="{{true}}">
+  <view>显示</view>
+  <view>显示</view>
+</block> -->
+
+<!-- <view hidden="{{true}}">
+  <view>显示</view>
+  <view>显示</view>
+</view> -->
+
+
+<!-- <checkbox checked='{{true}}'>男</checkbox> -->
+
+
+<!-- <view wx:for="{{[id,2,3,4,5]}}">{{item}}</view> -->
+
+
+<!-- <template is="objectCombine" data="{{for: a, bar: b}}"></template>
+
+<template name="objectCombine">
+  <view>{{for}}</view>
+  <view>{{bar}}</view>
+</template> -->
+
+
+
+<!-- <view>{{object.key}}{{array}}</view> -->
+
+
+<!-- 
+<view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+  输出下标：{{idx}}；输出值：{{itemName}}
+</view> -->
+
+
+
+<!-- 
+<view wx:for="{{array}}" wx:for-item="i" style='font-size:9px;'>
+    <block wx:for="{{array}}" wx:for-item="j">
+      <block wx:if="{{j <= i}}">
+         {{i}}*{{j}}={{i*j}}
+      </block>
+    </block>
+</view> -->
+
+
+<!-- <view id="outer" bindtap="outBT">
+  outer view
+  <view id="middle" bindtap="middleBT">
+    middle view
+    <view id="inner" catchtap="innerBT">
+      inner view
+    </view>
+  </view>
+</view> -->
+
+<!-- <view id="outer" bind:touchstart="handleTap1" capture-catch:touchstart="handleTap2">
+  outer view
+  <view id="inner" bind:touchstart="handleTap3" capture-bind:touchstart="handleTap4">
+    inner view
+  </view>
+</view> -->
+
+<!-- 
+<import src="../pageIn/pageIn.wxml"/>
+<template is="item" data="{{text: 'forbar'}}"/> -->
+
+<!-- <view class="a1">我是px</view>
+<view class="a2">我是rpx</view> -->
+
+
+<view class="section">
+  <view class="section__title">flex-direction: row</view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc_green">1</view>
+    <view class="flex-item bc_red">2</view>
+    <view class="flex-item bc_blue">3</view>
+  </view>
+</view>
+<view class="section">
+  <view class="section__title">flex-direction: column</view>
+  <view class="flex-wrp" style="height: 300px;flex-direction:column;">
+    <view class="flex-item bc_green">1</view>
+    <view class="flex-item bc_red">2</view>
+    <view class="flex-item bc_blue">3</view>
+  </view>
+</view>

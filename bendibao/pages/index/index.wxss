@@ -1,0 +1,71 @@
+
+/*swiper和image都默认有宽高，所以首先需要设置它们的宽高*/
+.slider, 
+.slider image, 
+.slider swiper {
+    width: 100%;
+    height: 390rpx;
+}
+
+/*设置图标图片宽高*/
+
+.index-nav image {
+    width: 80rpx;
+    height: 80rpx;
+    margin-bottom: 10rpx;
+}
+
+.index-nav {
+    /*给当前父元素设置成伸缩盒模式*/
+    display: flex;
+    /*设置子元素换行能排列*/
+    flex-wrap: wrap;
+}
+
+.index-nav .nav-item {
+    width: 33.33333%;
+    height: 200rpx;
+    /*给当前父元素设置成伸缩盒模式*/
+    display: flex;
+    /*盒子不会随着padding或者border的加入而增大盒子的空间*/
+    /* box-sizing: border-box; 此处后用伪元素实现右侧边框，故不需要*/
+    /*设置垂直排列*/
+    flex-direction: column;     /*故此时的主轴为垂直方向*/
+    /*设置主轴居中*/
+    justify-content: center;
+    /*设置交叉轴居中*/
+    align-items: center;
+    font-size: 14px;
+    /*底部边框，直接通过border-bottom*/
+    border-bottom: 1rpx solid #ccc;
+}
+
+/*每隔第三个元素去除边框*/
+
+.index-nav .nav-item:nth-child(3n)::after {
+    width: 0rpx;
+}
+
+/*
+*-----------------
+*首页入口分区
+*-----------------
+*/
+
+.index-enter image {
+    width: 320rpx;
+    height: 178rpx;
+}
+
+.index-enter {
+    display: flex;
+    padding: 20rpx 25rpx;
+}
+
+.index-enter .enter-item {
+    width: 50%;
+    display: flex;
+    /*使项目（图片）位于该容器的中心*/
+    justify-content: center;/*横向*/
+    align-items: center;/*纵向居中*/
+}
